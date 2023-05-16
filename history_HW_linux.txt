@@ -1,0 +1,18 @@
+   0 mkdir -p /home/user/start
+   1 ls
+   2 cd /home/
+   3 ls
+   4 cd /home/user/
+   5 ls
+   6 echo "Start" > /home/user/start/1.txt
+   7 ls
+   8 cd /home/user/start/
+   9 ls
+  10 date >> /home/user/start/1.txt 
+  11 ls
+  12 mkdir -p /opt/task
+  13 cp /home/user/start/1.txt /opt/task/start.txt
+  14 find / -maxdepth 1 -print0 | xargs -0 ls -altr | tail -n 4 >> /opt/task/start.txt
+  15 history
+  16 histiry > history_HW_linux.txt
+  17 history > history_HW_linux.txt
